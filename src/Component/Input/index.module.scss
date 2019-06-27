@@ -1,0 +1,22 @@
+.load{
+    font-size:.4rem;
+    float:left;
+    position: relative;
+    top:.27rem;
+    left:.3rem;
+}
+:global(.icon-search){
+    position: relative;
+    top:.34rem;
+}
+:global(.shuru){
+    width: 3.4rem;
+    height: .34rem;
+    position: relative;
+    left:1rem;
+    top:0rem;
+    border: 0px ;
+    background: pink;
+    text-align: center;
+    padding-left:.4rem;
+}

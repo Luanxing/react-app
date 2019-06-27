@@ -1,0 +1,41 @@
+.ul4{
+    position: relative;
+    top:3.5rem;
+    width: 7.5rem;
+    .img5{
+        width:7.5rem;
+        height: 4rem; 
+    }
+    .chineseName{
+        position: relative;
+        top:-1.7rem;
+        left:0.2rem;
+        color: #fff;
+    }
+    .discountText{ 
+        position: relative;
+        top:-1.6rem;
+        left:0.2rem;
+        color: #fff;
+    }
+    .englishName{
+        position: relative;
+        top:-2rem;
+        left:0.2rem;
+        color: #fff;
+        font-weight: 700;
+    }
+    .siloCategory{   
+        position: relative;
+        top:-1.4rem;
+        left:0.2rem;
+        color: #fff;
+        font-weight: 700;
+        border: 2px #fff solid;
+        width: .6rem;
+    }
+}
+.box{
+    height: 4.3rem;
+
+}

@@ -1,0 +1,17 @@
+
+.banner{
+    width: 3.75rem;
+    height:4.5rem;
+  
+}
+//解决轮播图靠右边的bug
+:global(.slider-frame){
+    width: 100%;
+    
+}
+
+.fuli{
+    padding-top: .1rem;
+    width: 100%;
+    height: 2.5rem;
+}

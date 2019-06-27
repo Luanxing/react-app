@@ -1,0 +1,15 @@
+.myactive{
+    color: aqua;
+    font-size:.28rem;
+}
+.ul1{
+    line-height: 1.173333rem;
+    font-size:.25rem;
+    :global(.daohang){
+       list-style: none;
+       float:left; 
+       padding-left: .22rem; 
+       position: relative;
+       top:0rem;
+    }   
+}
