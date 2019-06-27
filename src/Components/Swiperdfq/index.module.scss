@@ -1,0 +1,39 @@
+.swiperD{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    color: #fff;
+    bottom: 1.626667rem;
+  
+  .swiperDh{
+    margin-bottom: .08rem;
+    line-height: .84rem;
+    font-size: .693333rem;
+    font-weight: 700;
+  }
+  .swiperDh1{
+    line-height: .533333rem;
+    font-size: .373333rem;
+  }
+  .swiperDh2{
+    line-height: .533333rem;
+    font-size: .373333rem;
+  }
+}
+
+.pagination-container {
+  position: absolute;
+  text-align: center;
+  transition: .3s;
+  transform: translateZ(0);
+  z-index: 10;
+  bottom: .906667rem;
+  left: 0;
+  width: 100%;
+}
+
+
