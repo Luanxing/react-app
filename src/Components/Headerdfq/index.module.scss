@@ -1,0 +1,294 @@
+.headerA1{
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  .headerB1{
+    width: 10rem;
+    height: 1.173333rem;
+    margin: 0 auto;
+    .headerB11{
+      flex-direction: row;
+      width: 100%;
+      height: 100%;
+      list-style: none;
+      .loadh{
+        text-align: left;
+        width: 1.533333rem;
+        height: 1.173333rem;
+        box-sizing: border-box;
+        position: relative;
+        float: left;
+        line-height: 1.173333rem;
+        .loadh1{
+          padding: 0 .346667rem 0 .373333rem;
+          line-height: 1.28rem;
+          position: absolute;
+          font-size: .373333rem;
+          color: #fff;
+          display: block;
+          cursor: pointer;
+        } 
+      }
+      .searchDh{
+        float: left;
+        text-align: center;
+        height: 1.173333rem;
+        line-height: 1.173333rem;
+        position: relative;
+        .searchDh1{
+          display: inline-block;
+          width: 7.133333rem;
+          height: .906667rem;
+          overflow: hidden;
+          margin-top: .186667rem;
+          color: hsla(0,0%,100%,.6);
+          background-color: hsla(0,0%,100%,.3);
+          text-align: center;
+          .searchDh11{
+            max-width: 7.2rem;
+            overflow: hidden;
+            display: inline-block;
+            vertical-align: top;
+            line-height: .906667rem;
+            font-weight: 400;
+            font-size: .373333rem;
+            .icon-fangdajing{
+              padding-right: .266667rem;
+              font-size: .386667rem;
+              // font-size: 2.0rem;
+              color: #fff;
+            }
+          }
+        }
+      }
+      .shoppingdh{
+        float: right;
+        text-align: right;
+        width: 1.306667rem;
+        height: 1.173333rem;
+        line-height: 1.173333rem;
+        position: relative;
+        .shoppingdh1{
+          display: flex;
+          height: 1.173333rem;
+          justify-content: center;
+          color: #fff;
+          // align-items: center;
+          .icon-gouwudai{
+            width: .48rem;
+            height: .64rem;
+            display: block;
+            line-height: .64rem;
+            
+
+          }
+        }
+      }
+    }
+  }
+
+  .headerB2{
+    overflow: hidden;
+    width: 100%;
+    height: 1.173333rem;
+    margin: 0 auto;
+    color: #fff;
+    .headerB21{
+    overflow: scroll;
+    width: 10rem;
+    height: 1.173333rem;
+    margin: 0 auto;
+    padding-left: .2rem;
+    box-sizing: border-box;
+    .headerB211{
+      height: 1.173333rem;
+      font-size: .373333rem;
+      width: 10.666667rem;
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      white-space: nowrap;
+      .menudh{
+        text-align: center;
+        height: 1.173333rem;
+        line-height: 1.173333rem;
+        position: relative;
+        box-sizing: border-box;
+        width: 1.066667rem;
+        float: left;
+        color: #fff;
+        text-decoration: none;
+      
+        }
+        .menudh::after{
+          transition: all .5s ease 0s;
+          transform: scale(0);
+          content: "";
+          position: absolute;
+          width: .373333rem;
+          height: .053333rem;
+          bottom: .226667rem;
+          left: 50%;
+          margin-left: -.186667rem;
+          background: #fff;
+          opacity: 1;
+          }
+        .myactive::after{
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    }
+  }
+}
+.headerA2{
+  position: fixed;
+  background: #fff;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  .headerB1{
+    width: 10rem;
+    height: 1.173333rem;
+    margin: 0 auto;
+    .headerB11{
+      flex-direction: row;
+      width: 100%;
+      height: 100%;
+      list-style: none;
+      .loadh{
+        text-align: left;
+        width: 1.533333rem;
+        height: 1.173333rem;
+        box-sizing: border-box;
+        position: relative;
+        float: left;
+        line-height: 1.173333rem;
+        .loadh1{
+          padding: 0 .346667rem 0 .373333rem;
+          line-height: 1.28rem;
+          position: absolute;
+          font-size: .373333rem;
+          color: #000;
+          display: block;
+          cursor: pointer;
+        } 
+      }
+      .searchDh{
+        float: left;
+        text-align: center;
+        height: 1.173333rem;
+        line-height: 1.173333rem;
+        position: relative;
+        .searchDh1{
+          display: inline-block;
+          width: 7.133333rem;
+          height: .906667rem;
+          overflow: hidden;
+          margin-top: .186667rem;
+          color: #999;
+          background-color: #f5f5f5;
+          text-align: center;
+          .searchDh11{
+            max-width: 7.2rem;
+            overflow: hidden;
+            display: inline-block;
+            vertical-align: top;
+            line-height: .906667rem;
+            font-weight: 400;
+            font-size: .373333rem;
+            .icon-fangdajing{
+              padding-right: .266667rem;
+              font-size: .386667rem;
+              // font-size: 2.0rem;
+              color: #000;
+            }
+          }
+        }
+      }
+      .shoppingdh{
+        float: right;
+        text-align: right;
+        width: 1.306667rem;
+        height: 1.173333rem;
+        line-height: 1.173333rem;
+        position: relative;
+        .shoppingdh1{
+          display: flex;
+          height: 1.173333rem;
+          justify-content: center;
+          color: #000;
+          // align-items: center;
+          .icon-gouwudai{
+            width: .48rem;
+            height: .64rem;
+            display: block;
+            line-height: .64rem;
+            
+
+          }
+        }
+      }
+    }
+  }
+
+  .headerB2{
+    overflow: hidden;
+    width: 100%;
+    height: 1.173333rem;
+    margin: 0 auto;
+    color: #000;
+    .headerB21{
+    overflow: scroll;
+    width: 10rem;
+    height: 1.173333rem;
+    margin: 0 auto;
+    padding-left: .2rem;
+    box-sizing: border-box;
+    .headerB211{
+      height: 1.173333rem;
+      font-size: .373333rem;
+      width: 10.666667rem;
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+		  white-space: nowrap;
+      .menudh{
+        text-align: center;
+        height: 1.173333rem;
+        line-height: 1.173333rem;
+        position: relative;
+        box-sizing: border-box;
+        width: 1.066667rem;
+        float: left; 
+        color: #000;
+        text-decoration: none; 
+        
+        }
+        .menudh::after{
+          transition: all .5s ease 0s;
+          transform: scale(0);
+          content: "";
+          position: absolute;
+          width: .373333rem;
+          height: .053333rem;
+          bottom: .226667rem;
+          left: 50%;
+          margin-left: -.186667rem;
+          opacity: 1;
+          background: #000;  
+          }
+        .myactive::after{
+          transform: scale(1);
+          opacity: 1;
+        }
+      
+      }
+    }
+  }
+}

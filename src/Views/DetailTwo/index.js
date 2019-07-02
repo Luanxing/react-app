@@ -1,45 +1,3 @@
-<<<<<<< HEAD
-import React from 'react'
-import store from '../../Redux/store'
-import { HideTabbar,ShowTabbar } from './actionCreator';
-import {connect} from  'react-redux'
-import Listbar from '../../Component/Listbar/index'
-import axios from 'axios'
-class Detail extends React.Component{
-    render(){
-        return(
-            <div> 
-        
-              <Listbar></Listbar>
-
-               {
-                this.props.children
-               }
-            </div>
-        )
-    }
-    componentWillMount(){
-        //隐藏选项卡
-        this.props.hide()//子传父
-    }
-    // componentDidMount(){
-    //     axios.get('').then(res=>{
-
-    //     })
-    //     console.log(this.props.location.)
-    // }
-    componentWillUnmount(){
-        //显示选项卡
-        this.props.show()
-    }
-}
-const  mapDispatchToProps = {
-    show:ShowTabbar,
-    hide:HideTabbar
-}
-
-export default connect(null,mapDispatchToProps)(Detail)
-=======
 import React from "react";
 import axios from 'axios'
 import css from "./index.module.scss";
@@ -129,7 +87,7 @@ class Detail extends React.Component{
         refreshing={this.state.refreshing}
         onRefresh={() => {
            this.setState({ refreshing: false });
-           axios.get(`http://www.mei.com/appapi/secondcategory/search/v3?brandNames=&chineseCodes=&pageIndex=${this.state.pageIndex}&categoryId=1000000359&siloId=2013000100000000005&thirdCategories=${this.props.match.params.myid}&key=${this.state.keys}&sort=${this.state.sorts}&timestamp=1561724551807&summary=daeb6b078b13cb595ff6ec289564a62c&platform_code=H5`).then(res=>{
+           axios.get(`http://www.mei.com/appapi/event/product/v3?pageIndex=${this.state.pageIndex}&categoryId=${this.props.match.params.myid2}&key=${this.state.keys}&sort=${this.state.sorts}&timestamp=1561967502343&summary=d6c21abc6d3a1f6567db2a3cb5337237&platform_code=H5`).then(res=>{
             this.setState({
               detailLists: [...this.state.detailLists,...res.data.products],
               pageIndex: this.state.pageIndex+1
@@ -139,7 +97,7 @@ class Detail extends React.Component{
   >
 <div className={css.detailDL}>
     {this.state.detailLists.map(dl=>(
-      <div key={dl.productId} className={css.detailDL1}>
+      <div key={dl.productId} className={css.detailDL1} onClick={()=>this.handleClickcmt(dl.productId)}>
         <a className={css.detailDL11}>
           <div className={css.detailDLlist}>
             <img src={dl.imageUrl} className={css.detailDLlist11}/>
@@ -175,7 +133,7 @@ class Detail extends React.Component{
                     <Route path="/detail/deatail2" component={Detail2} exact/>
                     <Route path="/detail/deatail3" component={Detail3} exact/>
                     <Route path="/detail/deatail4" component={Detail4} exact/>
-                    <Route path="/detail/:myid" component={Detail1} exact/>
+                    <Route path="/detail/:myid2" component={Detail1} exact/>
                   </Switch>
       {
          this.props.children
@@ -201,6 +159,9 @@ class Detail extends React.Component{
     })
   }
 
+  handleClickcmt = (id) => {
+    this.props.history.push(`/commodity/${id}`);
+  }
   // handleClick1 () {
   //   this.setState({
   //     window.scrollTop:topping
@@ -216,7 +177,7 @@ class Detail extends React.Component{
 
   handleClickdt1 () {
   
-     axios.get(`http://www.mei.com/appapi/secondcategory/search/v3?brandNames=&chineseCodes=&pageIndex=1&categoryId=1000000359&siloId=2013000100000000005&thirdCategories=${this.props.match.params.myid}&key=&sort=&timestamp=1561948337064&summary=4037794214281346f05c0bbeb30d3738&platform_code=H5`).then(res=>{
+     axios.get(`http://www.mei.com/appapi/event/product/v3?pageIndex=1&categoryId=${this.props.match.params.myid2}&key=&sort=&timestamp=1561967502343&summary=d6c21abc6d3a1f6567db2a3cb5337237&platform_code=H5`).then(res=>{
       this.setState({
         detailLists: res.data.products,
         detailLists22: res.data.shareContent.shareInfo.trim().split(" "),
@@ -232,7 +193,7 @@ class Detail extends React.Component{
 
   handleClickdt2 () {
   
-    axios.get(`http://www.mei.com/appapi/secondcategory/search/v3?brandNames=&chineseCodes=&pageIndex=1&categoryId=1000000359&siloId=2013000100000000005&thirdCategories=${this.props.match.params.myid}&key=1&sort=ASC&timestamp=1561785008233&summary=19b285649aefb358de90a99859b3ba31&platform_code=H5`).then(res=>{
+    axios.get(`http://www.mei.com/appapi/event/product/v3?pageIndex=1&categoryId=${this.props.match.params.myid2}&key=1&sort=ASC&timestamp=1561967670122&summary=cddf192e3c84dd40af16ffb1543ac83e&platform_code=H5`).then(res=>{
       
         
       console.log(this.props)
@@ -250,7 +211,7 @@ class Detail extends React.Component{
 
   handleClickdt3 () {
    
-    axios.get(`http://www.mei.com/appapi/secondcategory/search/v3?brandNames=&chineseCodes=&pageIndex=1&categoryId=1000000359&siloId=2013000100000000005&thirdCategories=${this.props.match.params.myid}&key=&sort=DESC&timestamp=1561782068834&summary=6ee180c06adbb8aa02a0d511864a660f&platform_code=H5`).then(res=>{
+    axios.get(`http://www.mei.com/appapi/event/product/v3?pageIndex=1&categoryId=${this.props.match.params.myid2}&key=&sort=DESC&timestamp=1561967718181&summary=6a8b16be9e42ce7f0a33b22cdcd10a86&platform_code=H5`).then(res=>{
         
           
       console.log(res)
@@ -268,7 +229,7 @@ class Detail extends React.Component{
 
   handleClickdt4 () {
    
-    axios.get(`http://www.mei.com/appapi/secondcategory/search/v3?brandNames=&chineseCodes=&pageIndex=1&categoryId=1000000359&siloId=2013000100000000005&thirdCategories=${this.props.match.params.myid}&key=&sort=ASC&timestamp=1561782153438&summary=f2f55d19d07e6118b1a8f744e43d41ff&platform_code=H5`).then(res=>{
+    axios.get(`http://www.mei.com/appapi/event/product/v3?pageIndex=1&categoryId=${this.props.match.params.myid2}&key=&sort=ASC&timestamp=1561967760524&summary=af3fc6cbf60f887b98dfd3bebdd45652&platform_code=H5`).then(res=>{
         
           
         console.log(res)
@@ -285,8 +246,8 @@ class Detail extends React.Component{
   }
   
   componentDidMount () {
-    // console.log(this.props.match.params.myid)
-    axios.get(`http://www.mei.com/appapi/secondcategory/search/v3?brandNames=&chineseCodes=&pageIndex=1&categoryId=1000000359&siloId=2013000100000000005&thirdCategories=${this.props.match.params.myid}&key=&sort=&timestamp=1561948337064&summary=4037794214281346f05c0bbeb30d3738&platform_code=H5`).then(res=>{
+    // console.log(this.props.match.params.myid2)
+    axios.get(`http://www.mei.com/appapi/event/product/v3?pageIndex=1&categoryId=${this.props.match.params.myid2}&key=&sort=&timestamp=1561967502343&summary=d6c21abc6d3a1f6567db2a3cb5337237&platform_code=H5`).then(res=>{
       this.setState({
         detailLists: res.data.products,
         detailLists22: res.data.shareContent.shareInfo.trim().split(" ")
@@ -328,4 +289,3 @@ const mapDispatchToProps = {
 }
 export default connect(null,mapDispatchToProps)(Detail);
 
->>>>>>> dongfuqing

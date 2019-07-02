@@ -1,0 +1,130 @@
+.commodity{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  box-sizing: border-box;
+  background: #fff;
+  color: #000;
+  .commodityDh1{
+    z-index: 9999;
+    width: 100%;
+    height: 1.173333rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: hsla(0,0%,100%,.95);
+    .commodityDh11{
+      width: 1.36rem;
+      height: 1.173333rem;
+      position: relative;
+      z-index: 10;
+      .commodityDh{
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: relative;
+        text-decoration: none;
+        color: #007aff;
+        .commodityDhaa1{
+          display: block;
+          height: .386667rem;
+          position: absolute;
+          top: .4rem;
+          color: #222;
+          width: .573333rem;
+          left: .4rem;
+          font-size: .373333rem;
+        }
+      }
+    }
+    .commodityDh12{
+      padding-top: .266667rem;
+      position: relative;
+      z-index: 10;
+      .commodityDh12a{
+        display: block;
+        width: 7.066667rem;
+        height: .4rem;
+        padding: .026667rem;
+        font-size: .373333rem;
+        overflow: hidden;
+        line-height: .4rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        text-transform: uppercase;
+        text-align: center;
+        color: #000;
+        font-weight: 700;
+      }
+      .commodityDh12b{
+        margin: 0;
+        padding: 0;
+        .commodityDh12b1{
+          color: #dd2828;
+          font-size: .32rem;
+          display: block;
+          width: 7.066667rem;
+          height: .4rem;
+          padding: .026667rem;
+          overflow: hidden;
+          line-height: .4rem;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          text-transform: uppercase;
+          text-align: center;
+          
+        }
+      }
+    }
+    .commodityDh13{
+      width: 1.36rem;
+      height: 1.173333rem;
+      position: relative;
+      z-index: 10;
+      .commodityDh13a{
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: relative;
+        text-decoration: none;
+        color: #007aff;
+        .commodityDh13a1{
+          width: .56rem;
+          right: -.1rem;
+          font-size: .186667rem;
+          display: block;
+          height: .386667rem;
+          position: absolute;
+          top: 0;
+          color: #222;
+        }
+      }
+    }
+  }
+  .commodityDd{
+    padding: 0 .533333rem .666667rem;
+    position: relative;
+    top: -1.173333rem;
+    .commodityDd1{
+      padding: 0 0 .32rem;
+    }
+    .commodityDd2{
+      width: 100%;
+      padding-bottom: .32rem; 
+      .commodityDd21{
+        padding-bottom: .133333rem;
+        .commodityDd21a{
+          font-size: .48rem;
+          padding-bottom: .133333rem;
+          text-transform: uppercase;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
