@@ -16,10 +16,5 @@ class Liketoread extends React.Component{
             </div>
         )
     }
-    componentDidMount(){
-        axios.get('').then(res=>{
-            console.log(res)
-        })
-    }
 }
 export default Liketoread

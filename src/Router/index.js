@@ -10,11 +10,13 @@ import Lifestyle from '../Views/Lifestyle'
 import Kids from '../Views/Kids'
 import Upcoming from '../Views/Upcoming'
 import Detail from '../Views/Detail/index'
-
 import React from 'react' 
 import {Provider} from 'react-redux'
 import store from '../Redux/store'
-
+import Person from '../Views/Detail/Person/index'
+import Discount from '../Views/Detail/Discount/index'
+import Choose from '../Views/Detail/Choose/index'
+import Price from '../Views/Detail/Price/index'
 
 const router = (
     //引入Provider，传进store,使所有的容器组件拿到store

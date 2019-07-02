@@ -8,7 +8,7 @@ class Input extends React.Component{
             <div className={this.props.myclass}>
                 <p className={css.load}>登录</p>
                 <p><i className="iconfont icon-search"></i></p>
-                <input type='text' value={'AMARNI 阿玛尼'} className='shuru'></input>
+                <input type='text'  className='shuru'></input>
                 <Tabbar></Tabbar>
                 {
                     this.props.children

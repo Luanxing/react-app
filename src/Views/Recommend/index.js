@@ -1,6 +1,6 @@
 import React from 'react'
 import css from './index.module.scss'
-import { Carousel, WingBlank } from 'antd-mobile'
+import { Carousel } from 'antd-mobile'
 import 'antd-mobile/dist/antd-mobile.css'
 import axios from 'axios'
 import Newclearance from '../../Component/Newclearance/index'
@@ -34,7 +34,7 @@ class Recommend extends React.Component{
             <div>
                 <div className={css.lunbo}>
                 {/* 轮播 */}
-                <WingBlank>
+             
                     <Carousel
                         autoplay={false}
                         infinite
@@ -61,7 +61,7 @@ class Recommend extends React.Component{
                             </a>
                         ))}
                     </Carousel>
-                </WingBlank>
+              
                 {/* 新人福利大礼包 */}
                 <img src={this.state.list.img} className={css.fuli}></img>
                 {/* 每日新品 */}

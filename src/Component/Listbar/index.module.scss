@@ -1,0 +1,40 @@
+.ul5{
+    list-style: none;
+    display: flex;
+   .li5{
+       flex:1;
+   } 
+}
+.title{
+    text-indent: 2rem;
+}
+.checked{
+    color:red;
+}
+.ul6,.ul7{
+    width: 100%;
+    list-style: none;
+    float: left;
+    .pic{
+        width: 3rem;
+        height: 4.5rem;
+        position: relative;
+        left: 0.7rem;
+        float: left;
+        // margin-left: -1rem;
+        .korean{
+            display: block;
+                width:3rem;
+                height: 3rem;
+                float: left;
+            }
+            .brandName{
+                position: relative;
+                left: 0rem;
+                top:3rem;
+            }
+            .price{color: red;}
+
+    }
+    
+}

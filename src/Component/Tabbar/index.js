@@ -3,9 +3,7 @@ import {NavLink} from 'react-router-dom'
 import css from './index.module.scss'
 
 class Tabbar extends React.Component{
-    // state={
-    //     isfixed:this.props.chen
-    // }
+    
     render(){
         return(
            
@@ -22,11 +20,7 @@ class Tabbar extends React.Component{
             
         )
     }
-    // componentWillReceiveProps(){
-    //     this.setState({
-    //         isfixed:this.props.chen
-    //     })
-    // }
+    
 }
 export default Tabbar
 
