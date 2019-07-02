@@ -10,10 +10,10 @@ class Footerdfq extends React.Component{
         <div className={css.footerDh}>
           <a className={css.footerDh1}>400&nbsp;-&nbsp;664&nbsp;-&nbsp;6698</a>
           <nav className={css.footerDh2}>
-            <a class={css.footerDh21}>首页</a>
-            <a class={css.footerDh21}>客户端</a>
-            <a class={css.footerDh21}>登录</a>
-            <a class={css.footerDh211}>注册</a>
+            <a className={css.footerDh21}>首页</a>
+            <a className={css.footerDh21}>客户端</a>
+            <a className={css.footerDh21}>登录</a>
+            <a className={css.footerDh211}>注册</a>
           </nav>
           <p className={css.footerDh3}>浙ICP备16004860号-1</p>
         </div>

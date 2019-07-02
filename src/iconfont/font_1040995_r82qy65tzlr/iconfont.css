@@ -45,10 +45,26 @@
 
 .icon-xiangzuo:before {
   content: "\e639";
+  display: block;
+  height: .386667rem;
+  position: absolute;
+  top: .4rem;
+  color: #222;
+  width: .573333rem;
+  left: .4rem;
+  font-size: .473333rem;
 }
 
 .icon-ego-menu:before {
   content: "\e605";
+  width: .56rem;
+  right: .4rem;
+  font-size: .486667rem;
+  display: block;
+  height: .386667rem;
+  position: absolute;
+  top: .4rem;
+  color: #222;
 }
 
 .icon-wode1:before {
@@ -152,6 +168,8 @@
 
 .icon-xia1:before {
   content: "\e6b0";
+  font-size: .486667rem;
+  display: block;
 }
 
 .icon-zhiwubaofenfenxi:before {

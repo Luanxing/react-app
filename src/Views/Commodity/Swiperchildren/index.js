@@ -6,15 +6,14 @@ import css from "./index.module.scss";
 import 'antd-mobile/dist/antd-mobile.css';
 
 
-class Swiperdfq extends React.Component {
+class Swiperchildren extends React.Component {
   state = {
     dataList: [],
-    imgHeight: 100,
   }
   componentDidMount() {
-    axios.get("http://www.mei.com/appapi/home/mktBannerApp/v3?silo_id=2013000100000000005&platform_code=PLATEFORM_H5").then(res=>{
+    axios.get(`http://www.mei.com/appapi/product/detail/v3?categoryId=2040204090000006894&productId=${this.props.myswiper}&platform_code=H5&timestamp=1561971477491&summary=e895fd7152ca5232d2530a09fc206419`).then(res=>{
         this.setState({
-          dataList: res.data.banners
+          dataList: res.data.infos.images
         })
       })
     // simulate img loading
@@ -39,7 +38,7 @@ class Swiperdfq extends React.Component {
               width: '.133333rem',
               height: '.133333rem',
               borderRadius: '0',
-              background: '#fff',
+              background: '#000',
               opacity: '.5',
             }}
           dotActiveStyle={{
@@ -48,7 +47,7 @@ class Swiperdfq extends React.Component {
             width: '.4rem',
             height: '.133333rem',
             borderRadius: '0',
-            background: '#fff',
+            background: '#000',
             opacity: '1',
         }}  
         >
@@ -56,12 +55,27 @@ class Swiperdfq extends React.Component {
             <a
               key={val.id}
               href="http://www.alipay.com"
-              style={{ textDecoration: 'none',display: 'inline-block', width: '100%', height: this.state.imgHeight,}}
+              style={{ 
+                textDecoration: 'none',
+                display: 'inline-block',
+                height: '11.9067rem',
+                opacity: '1',
+                width: '8.933333rem',
+                margin: '0 .533333rem .666667rem',
+                top: '1.173333rem', 
+                 position: 'relative',
+                 overflow: 'hidden',
+                 zIndex: '1',
+                 boxShadow: '0 0.013333rem 0.133333rem 0.066667rem rgba(0,0,0,.05)',
+
+                }}
             >
               <img
-                src={val.main_image}
+                src={val.bigImgUrl}
                 alt=""
-                style={{ width: '100%', verticalAlign: 'top' }}
+                style={{ width: '100%', verticalAlign: 'top' ,    display: 'block',
+                height: '100%',
+            }}
                 onLoad={() => {
                   // fire window resize event to change height
                   window.dispatchEvent(new Event('resize'));
@@ -69,11 +83,11 @@ class Swiperdfq extends React.Component {
                   // console.log(this.state.dataList)
                 }}
               />
-              <div className={css.swiperD}>
+              {/* <div className={css.swiperD}>
                 <p className={css.swiperDh}>{val.main_title}</p>
                 <p className={css.swiperDh1}>{val.sub_title}</p>
                 <p className={css.swiperDh2}>{val.description}</p>
-              </div>
+              </div> */}
             </a>
             
           ))}
@@ -84,4 +98,4 @@ class Swiperdfq extends React.Component {
 }
 
 
-export default Swiperdfq;
+export default Swiperchildren;

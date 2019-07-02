@@ -3,6 +3,7 @@ import React from 'react';
 import './App.css';
 import Headerdfq from './Components/Headerdfq'
 import Footerdfq from "./Components/Footerdfq";
+import {connect} from 'react-redux'
 class App extends React.Component{
 
   constructor(props) {
@@ -21,13 +22,17 @@ class App extends React.Component{
   render () {
     return <div>
         {
+          this.props.isShow?
           <Headerdfq scl={this.state.isceiling}/>
+          :null
         }
         {
          this.props.children
          }
          {
-         <Footerdfq/>
+            this.props.isShow? 
+            <Footerdfq/>
+            :null
          }
          
     </div>
@@ -45,4 +50,15 @@ class App extends React.Component{
   }
 }
 
-export default App;
+const mapStateToProps = (state)=>{
+  // console.log(state);
+  return {
+    isShow:state.isShow,
+  }
+}
+
+const mapDispatchToProps = {
+  // 
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(App);

@@ -1,0 +1,288 @@
+.detaildfq{
+  background: #fff;
+  .detailDh{
+  z-index: 9999;
+  width: 100%;
+  height: 1.173333rem;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background: rgb(255, 255, 255);
+  .detailDh1{
+    width: 1.36rem;
+    height: 1.173333rem;
+    position: relative;
+    z-index: 10;
+    .detailDh11{
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: relative;
+    }
+  }
+  .detailDh2{
+    position: relative;
+    z-index: 10;
+    .detailDh21{
+      display: block;
+      width: 7.066667rem;
+      height: 1.173333rem;
+      font-size: .426667rem;
+      font-weight: 700;
+      overflow: hidden;
+      line-height: 1.173333rem;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+  .detailDh3{
+    width: 1.36rem;
+    height: 1.173333rem;
+    position: relative;
+    z-index: 10;
+    .detailDh31{
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: relative;
+    }
+  }
+  }
+  .detailDK{
+  overflow: hidden;
+  width: 100%;
+  height: 1.173333rem;
+  margin: 0 auto;
+  z-index: 100;
+  position: relative;
+  background: #fff;
+  .detailDK1{
+    overflow: auto;
+    width: 100%;
+    height: 1.173333rem;
+    margin: 0 auto;
+    .detailDK11{
+      height: 1.173333rem;
+      font-size: .373333rem;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      .detailMenu{
+        text-align: center;
+        height: 1.066667rem;
+        line-height: 1.066667rem;
+        position: relative;
+        width: 2.48rem;
+        color: #999;
+        font-weight: 700;
+        .detailMenu1::before {
+          content: "";
+          width: 0;
+          height: 0;
+          position: absolute;
+          border-width: .133333rem;
+          border-style: solid;
+          border-color: transparent transparent #aaa;
+          right: 0.5rem;
+          top: .3rem;
+          display: block;
+        }
+        .detailMenu2::before {
+          content: "";
+          width: 0;
+          height: 0;
+          position: absolute;
+          border-width: .133333rem;
+          border-style: solid;
+          border-color: transparent transparent #aaa;
+          right: 0.5rem;
+          border-color: #aaa transparent transparent;
+          top: .55rem;
+        }
+      }
+      .mydetailactive{
+        color: #2b2b2b;
+      }
+    }
+  }
+  }
+  .icons{
+    position: absolute;
+    right: .4rem;
+    bottom: -1.6rem;
+    width: 1.2rem;
+    z-index: 200;
+    .icons1{
+      width: 1.2rem;
+      height: 1.2rem;
+      margin-bottom: .4rem;
+      .icons11{
+        text-decoration: none;
+        color: #007aff;
+        .icons11a{
+          width: 100%;
+          display: block;
+          border: 0;
+        }
+      }
+    }
+    .icons2{
+      width: 1.2rem;
+      height: 1.2rem;
+      margin-bottom: .4rem;
+      .icons21{
+        width: 100%;
+        display: block;
+        border: 0;
+      }
+    }
+  }
+  .icont{
+    position: fixed;
+    right: .4rem;
+    bottom: 0;
+    width: 1.2rem;
+    z-index: 200;
+    .icons1{
+      width: 1.2rem;
+      height: 1.2rem;
+      margin-bottom: .4rem;
+      .icons11{
+        text-decoration: none;
+        color: #007aff;
+        .icons11a{
+          width: 100%;
+          display: block;
+          border: 0;
+        }
+      }
+    }
+    .icons2{
+      width: 1.2rem;
+      height: 1.2rem;
+      margin-bottom: .4rem;
+      .icons21{
+        width: 100%;
+        display: block;
+        border: 0;
+      }
+    }
+  }
+  .detailDL{
+    width: 9.6rem;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    background: #fff;
+    .detailDL1{
+      position: relative;
+      width: 4.4rem;
+      height: 8.053333rem;
+      margin-bottom: .266667rem;
+      display: inline-block;
+      overflow: hidden;
+      margin-right: .4rem;
+      .detailDL11{
+        display: block;
+        width: 100%;
+        color: #000;
+        text-decoration: none;
+        .detailDLlist{
+          width: 4.4rem;
+          height: 5.866667rem;
+          position: relative;
+          .detailDLlist11{
+            margin-bottom: .133333rem;
+            display: block;
+            width: 100%;
+            border: 0;
+          }
+        }
+        .detailDLlist2{
+          height: .44rem;
+          padding: .013333rem 0 0 .013333rem;
+          margin-top: .133333rem;
+          margin-bottom: .133333rem;
+          overflow: hidden;
+          .detailDLlist21{
+            margin: 0;
+            padding: 0;
+            .detailDLlist211{
+              background: rgb(255, 255, 255);
+              color: rgb(0, 0, 0);
+              border: 0.013333rem solid rgb(0, 0, 0);
+              display: inline-block;
+              margin-right: .053333rem;
+              padding: 0 .04rem;
+              font-size: .266667rem;
+            }
+          }
+        }
+        .detailDLlist3{
+          padding-bottom: .066667rem;
+          .detailDLlist31{
+            display: block;
+            width: 100%;
+            margin-bottom: .066667rem;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            height: .373333rem;
+            line-height: .373333rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: .373333rem;
+          }
+          .detailDLlist32{
+            display: block;
+            width: 100%;
+            margin-bottom: .066667rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            padding: .026667rem 0;
+            height: .32rem;
+            line-height: .32rem;
+            font-size: .32rem;
+          
+          }
+        }
+        .detailDLlist4{
+          display: flex;
+          justify-content: space-between;
+          .detailDLlist41{
+            margin: 0;
+            padding: 0;
+            .detailDLlist411{
+              color: #dd2828;
+              font-size: .32rem;
+              font-weight: 700;
+              display: inline-block;
+              vertical-align: top;
+              line-height: .346667rem;
+              padding-right: .266667rem;
+            }
+            .detailDLlist412{
+              color: #ccc;
+              font-size: .266667rem;
+              display: inline-block;
+              vertical-align: top;
+              line-height: .346667rem;
+              text-decoration: line-through;
+            }
+          }
+          .detailDLlist42{
+            color: #666;
+            font-size: .266667rem;
+            position: relative;
+            top: -.053333rem;
+          }
+        }
+      }
+    }
+    }
+}

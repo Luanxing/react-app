@@ -8,6 +8,7 @@ import css from "./index.module.scss";
 import { PullToRefresh, ListView } from 'antd-mobile';
 import ReactDOM from 'react-dom';
 // import Footerdfq from "../../Components/Footerdfq";
+import 'antd-mobile/dist/antd-mobile.css';
 class Baby extends React.Component{
 
   constructor(props) {
@@ -17,8 +18,9 @@ class Baby extends React.Component{
       down: true,
       height:document.documentElement.clientHeight,
       productdfqList: [],
-      productdfqList2: [],
+      // productdfqList2: [],
       babylist: [],
+      pageIndex: 2,
       // isceiling: null,
     };
   }
@@ -42,12 +44,19 @@ class Baby extends React.Component{
         refreshing={this.state.refreshing}
         onRefresh={() => {
            this.setState({ refreshing: false });
-          setTimeout(() => {
+
+           axios.get(`http://www.mei.com/appapi/silo/eventForH5?categoryId=kids&pageIndex=${this.state.pageIndex}&timestamp=1561545276676&summary=e90c2ebf688d76a00688c17a79e13f95&platform_code=H5`).then(res=>{
             this.setState({
-               refreshing: false,
-               productdfqList: [...this.state.productdfqList,...this.state.productdfqList2]
-               });
-          }, 1000);
+              productdfqList: [...this.state.productdfqList,...res.data.eventList],
+              pageIndex: this.state.pageIndex+1
+              })
+            })
+          // setTimeout(() => {
+          //   this.setState({
+          //      refreshing: false,
+          //      productdfqList: [...this.state.productdfqList,...this.state.productdfqList2]
+          //      });
+          // }, 1000);
           console.log(this.state.productdfqList)
         }}
       >
@@ -59,7 +68,7 @@ class Baby extends React.Component{
         <div className={css.babyDh1}>
           <ul className={css.babyDh11}>
             {this.state.babylist.map(hl=>(
-              <li key={hl.categoryTwoId} className={css.babyDhaa}>
+              <li key={hl.categoryTwoId}  className={css.babyDhaa} onClick={()=>this.handleClick(hl.categroyTwoName)}>
                 <img src={hl.categoryImgStr} className={css.babyDhaa1}/>
               </li>
             ))}
@@ -76,6 +85,17 @@ class Baby extends React.Component{
     </div>
   }
 
+  handleClick = (id)=>{
+    // console.log(this.props); // 父组件传来的属性
+    console.log(id)
+    this.props.history.push(`/detail/${id}`);
+
+   
+    // this.props.history.push({pathname:`/detail/${id}`,state:{data:nameDh}})
+    // console.log(id,nameDh)
+    // console.log(this.props)
+  }
+
   componentDidMount () {
     const hei = this.state.height - ReactDOM.findDOMNode(this.ptr).offsetTop;
     axios.get("http://www.mei.com/appapi/cms/cmsDetail/v3?silo=2013000100000000005&ids=2120000100000000146&timestamp=1561540680398&summary=6451ca13e181f05beac56e539808a565&platform_code=H5"
@@ -88,23 +108,18 @@ class Baby extends React.Component{
     })
 
     axios.get('http://www.mei.com/appapi/silo/eventForH5?categoryId=kids&pageIndex=1&timestamp=1561545276676&summary=e90c2ebf688d76a00688c17a79e13f95&platform_code=H5').then(res=>{
-      console.log(res.data.eventList)
+      // console.log(res.data.eventList)
       this.setState({
         productdfqList: res.data.eventList
       })
     })
-    axios.get('http://www.mei.com/appapi/silo/eventForH5?categoryId=kids&pageIndex=2&timestamp=1561553606715&summary=6c03ee1cba1cb0a143511c748d9eed2b&platform_code=H5').then(res=>{
-      console.log(res.data.eventList)
-      this.setState({
-        productdfqList2: res.data.eventList
-      })
-    })
+   
     
 
-    setTimeout(() => this.setState({
+    this.setState({
       height: hei,
       
-    }), 0);
+    })
 
 
     // window.addEventListener('scroll', this.handleScroll);
@@ -119,3 +134,5 @@ class Baby extends React.Component{
 }
 
 export default Baby;
+
+// 
