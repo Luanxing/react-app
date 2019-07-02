@@ -1,0 +1,7 @@
+.navlist2{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    color: #ccc;
+    height: 2rem;
+}

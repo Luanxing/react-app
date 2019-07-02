@@ -1,0 +1,46 @@
+.bigbox{
+   
+    width: 100%;
+    margin: .5rem
+    
+}
+.listbox2{
+    display: block;
+    margin: .533333rem;
+    float: left;
+    padding-left: .2rem
+    
+}
+.listname{
+    width: 10rem;
+    height: 12.866667rem;
+}
+.brandname{
+    font-weight: 700;
+   width: 100%;
+}
+.price{
+    color: #dd2828;
+    font-size: .32rem;
+    font-weight: 700;
+}
+.marketprice{
+    font-size: .266667rem;
+    color: #ccc;
+    margin-left: .7rem
+}
+.discount{
+    font-size: .32rem; 
+    margin-left: 1rem
+}
+body{
+    background: white
+
+}
+.productname{
+    width: 9rem;
+    display:inline-block;
+    overflow: hidden;
+   
+
+}
