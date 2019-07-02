@@ -1,4 +1,5 @@
 import React from 'react'
+<<<<<<< HEAD
 class Crossborder extends React.Component{
     render(){
         return(
@@ -10,3 +11,17 @@ class Crossborder extends React.Component{
 }
 
 export default Crossborder
+=======
+
+
+class Crossborder extends React.Component{
+  render(){
+    return<div>
+     crossborder
+    </div>
+  }
+}
+
+
+export default Crossborder;
+>>>>>>> zhengshuai

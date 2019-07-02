@@ -1,4 +1,5 @@
 import React from 'react'
+<<<<<<< HEAD
 class Upcoming extends React.Component{
     render(){
         return(
@@ -10,3 +11,17 @@ class Upcoming extends React.Component{
 }
 
 export default Upcoming
+=======
+
+
+class Upcoming extends React.Component{
+  render(){
+    return<div>
+     coming
+    </div>
+  }
+}
+
+
+export default Upcoming;
+>>>>>>> zhengshuai

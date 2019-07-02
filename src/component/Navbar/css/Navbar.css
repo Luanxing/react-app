@@ -1,0 +1,20 @@
+.navlist1{
+    height: 1.473333rem;
+    width: 22.666667rem;
+    display: flex;
+    justify-content: space-between;
+    color: #fff
+    
+}
+.navlist1 li{
+   
+    text-align: center;
+    height: 1.173333rem;
+    line-height: 1.173333rem;
+    position: relative;
+    box-sizing: border-box;
+    font-size: 1rem;
+    float: left;
+    width: 4rem;
+    
+}

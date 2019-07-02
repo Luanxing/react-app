@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 <<<<<<< HEAD
 // import Tabbar from './Component/Tabbar/index'
@@ -119,3 +120,23 @@ const mapDispatchToProps = {
 
 export default connect(mapStateToProps,mapDispatchToProps)(App);
 >>>>>>> dongfuqing
+=======
+import React,{Component} from 'react';
+import './App.css';
+import Navbar from './component/Navbar';
+
+class App extends React.Component {
+ render(){
+  return (
+    
+    <div>
+      {
+       this.props.children 
+      }
+    
+    </div>
+  )
+}
+} 
+export default App;
+>>>>>>> zhengshuai
